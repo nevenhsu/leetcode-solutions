@@ -1,0 +1,11 @@
+// Last updated: 11/17/2025, 4:38:44 PM
+function removeElement(nums: number[], val: number): number {
+    let k = 0;
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] != val) {
+            nums[k] = nums[i];
+            k++;
+        }
+    }
+    return k;
+};
